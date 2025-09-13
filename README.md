@@ -1,0 +1,2 @@
+# strategos
+python diagram tool
