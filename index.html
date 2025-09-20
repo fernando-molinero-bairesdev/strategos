@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategos Diagrams</title>
+</head>
+<body>
+    <h1>Welcome to Strategos Diagrams</h1>
+    <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+            </marker>
+        </defs>
+        <!-- Nodes and edges will be rendered here -->
+
+            <g transform="translate(40, 40)">
+                <circle cx="10" cy="10" r="10" fill="#f1f1f1" stroke="#333" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="14">frontend</text>
+            </g>
+
+
+            <g transform="translate(140, 40)">
+                <circle cx="10" cy="10" r="10" fill="#f1f1f1" stroke="#333" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="14">api_gateway</text>
+            </g>
+
+
+            <g transform="translate(40, 140)">
+                <circle cx="10" cy="10" r="10" fill="#f1f1f1" stroke="#333" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="14">database</text>
+            </g>
+
+<line x1="50" y1="50" x2="150" y2="50" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+<line x1="150" y1="50" x2="50" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+    </svg>
+</body>
+</html>
